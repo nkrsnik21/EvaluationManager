@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.dgvStudents = new System.Windows.Forms.DataGridView();
+            this.btnEvaluateStudent = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudents)).BeginInit();
             this.SuspendLayout();
             // 
@@ -37,17 +38,28 @@
             this.dgvStudents.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvStudents.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvStudents.Location = new System.Drawing.Point(77, 57);
+            this.dgvStudents.Location = new System.Drawing.Point(51, 38);
             this.dgvStudents.Name = "dgvStudents";
             this.dgvStudents.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvStudents.Size = new System.Drawing.Size(683, 381);
+            this.dgvStudents.Size = new System.Drawing.Size(683, 336);
             this.dgvStudents.TabIndex = 0;
+            // 
+            // btnEvaluateStudent
+            // 
+            this.btnEvaluateStudent.Location = new System.Drawing.Point(622, 401);
+            this.btnEvaluateStudent.Name = "btnEvaluateStudent";
+            this.btnEvaluateStudent.Size = new System.Drawing.Size(138, 37);
+            this.btnEvaluateStudent.TabIndex = 1;
+            this.btnEvaluateStudent.Text = "Evaluiraj studenta";
+            this.btnEvaluateStudent.UseVisualStyleBackColor = true;
+            this.btnEvaluateStudent.Click += new System.EventHandler(this.btnEvaluateStudent_Click);
             // 
             // FrmStudents
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnEvaluateStudent);
             this.Controls.Add(this.dgvStudents);
             this.Name = "FrmStudents";
             this.Text = "FrmStudents";
@@ -60,5 +72,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgvStudents;
+        private System.Windows.Forms.Button btnEvaluateStudent;
     }
 }
