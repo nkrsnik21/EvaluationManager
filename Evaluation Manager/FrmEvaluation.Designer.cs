@@ -173,6 +173,7 @@
             this.txtActivityDescription.Size = new System.Drawing.Size(591, 182);
             this.txtActivityDescription.TabIndex = 14;
             this.txtActivityDescription.Text = "";
+            this.txtActivityDescription.TextChanged += new System.EventHandler(this.txtActivityDescription_TextChanged);
             // 
             // FrmEvaluation
             // 
@@ -196,6 +197,7 @@
             this.Controls.Add(this.lblActivities);
             this.Name = "FrmEvaluation";
             this.Text = "FrmEvaluation";
+            this.Load += new System.EventHandler(this.FrmEvaluation_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.numPoints)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

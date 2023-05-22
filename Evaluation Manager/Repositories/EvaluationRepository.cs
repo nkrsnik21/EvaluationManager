@@ -41,6 +41,12 @@ namespace Evaluation_Manager.Repositories
             DB.CloseConnection();
             return evaluations;
         }
+
+        internal static object GetEvaluation(object selectedStudent, Activity currentActivity)
+        {
+            throw new NotImplementedException();
+        }
+
         private static Evaluation CreateObject(SqlDataReader reader)
         {
             int idActivities = int.Parse(reader["IdActivities"].ToString());
